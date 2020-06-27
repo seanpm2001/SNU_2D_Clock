@@ -1,0 +1,151 @@
+<!-- Start of script !-->
+<!DOCTYPE html>
+<HTML>
+<BODY>
+<HEAD>
+<BODY BGCOLOR="SILVER">
+<META>
+	<META CHARSET="UTF-16">
+</META>
+<style>
+/* Headings */
+H1 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H2 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H3 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H4 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H5 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H6 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+</style>
+<!-- Divider !-->
+<style>
+/* Rich text */
+p {
+	color: black;
+	font-family: "Liberation Serif";
+}
+a {
+	color: navy;
+	font-family: "Tahoma";
+}
+</style>
+<script>
+// JS Browser console
+console.log("JS Console fot SNU\nWEB/JS/: ");
+</script>
+<script>
+// Hello message
+function helloMessage1() {
+	alert("Hello message\nHello world!");
+}
+</script>
+<script>
+// Five second timer
+function fiveSecTimer1() {
+	alert("5 second Timer\nTimes up!");
+}
+</script>
+<script>
+// 3 int clock
+function startTime() {
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+	m = checkTime(m);
+	s = checkTime(s);
+	document.getElementById('txt').innerHTML =
+	h + ":" + m + ":" + s;
+	var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	return i;
+}
+</script>
+<?
+/* Start of PHP section */
+// Inspired by W3SCHOOLS /
+echo ("https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock");
+// End of PHP section	 /
+?>
+<TITLE>SNU Clock - SNU Apps</TITLE>
+</HEAD>
+<section>
+<!--<p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+<p>Click "Stop" to prevent the first function to execute.</p>
+<p>(You must click "Stop" before the 3 seconds are up.)</p>
+!-->
+<HR>
+<header>
+<H1>SNU Clock</H1>
+<H3>SNU Time utility</H3>
+</header>
+<HR>
+<section>
+<H3>Time with hours, minutes, seconds</H3>
+<!-- Separate clocks needed for Hours + minutes, Hours, Minutes, Seconds, Hours + Minutes + Seconds + Milliseconds !-->
+<body onload="startTime()">
+<div id="txt"></div>
+</section>
+<HR>
+<section>
+<H1>Tests</H1>
+<H1>Hello message</H1>
+<button onclick="myVar = setTimeout(helloMessage1, 3000)">Try it</button>
+<H1>Stop the hello message within 3 seconds by pressing this button</H1>
+<button onclick="clearTimeout(myVar)">Stop it</button>
+<HR>
+<H1>5 second timer</H1>
+<button onclick="myVar = setTimeout(fiveSecTimer1, 5000)">Try it</button>
+<H1>Stop timer</H1>
+<button onclick="clearTimeout(myVar)">Stop it</button>
+<body onload="startTime()">
+<div id="txt"></div>
+</section>
+<HR>
+<section>
+<details><summary><H1>View older versions of this page</H1></summary>
+<H3>Snapshots 1 to 10</H3>
+<H4><button><a href="SNUClockHome_Snapshot1.html">Snapshot 1 (December 16th 2019)</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot2.html">Snapshot 2</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot3.html">Snapshot 3</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot4.html">Snapshot 4</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot5.html">Snapshot 5</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot6.html">Snapshot 6</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot7.html">Snapshot 7</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot8.html">Snapshot 8</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot9.html">Snapshot 9</a></button></H4>
+<H4><button><a href="SNUClockHome_Snapshot10.html">Snapshot 10</a></button></H4>
+</details>
+</section>
+<HR>
+<section>
+<H1>You have reached the bottom of this page!</H1>
+</section>
+</section>
+<HR>
+<footer>
+<p>Footer is not yet properly setup</p>
+</footer>
+</BODY>
+<!--</body>!-->
+</HTML>
+<!-- End of script !-->
